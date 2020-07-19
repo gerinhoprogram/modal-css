@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Modal apenas com CSS</title>
-	
+    <meta charset="UTF-8">
+    <title>Modal apenas com CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
 
-	<a href="#abrirModal">Open Modal</a>
+    <a href="#abrirModal" title="Fechar"><button class="btn">Clique para abrir o modal</button></a>
+    <div id="abrirModal" class="modal">
+        <a href="#fechar" title="Fechar" class="fechar"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a>
+        <h2>Corpo do modal</h2>
+    </div>
 
-<div id="abrirModal" class="modal">
-  <a href="#fechar" title="Fechar" class="fechar">x</a>
-  <h2>Janela Modal</h2>
-  
-</div>
-	
 </body>
+
 </html>
